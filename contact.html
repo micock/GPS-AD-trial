@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPS-AD Trial</title>
-    <link rel="icon" type="image/png" href="../Images/pictogram.png">
-    <link rel="stylesheet" href="../style.css">
+    <title>GPS-AD Trial - Contact</title>
+    <link rel="icon" type="image/png" href="Images/pictogram.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -19,128 +19,60 @@
                     <span class="hamburger-line"></span>
                 </button>
                 <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html" class="active">Acceuil</a></li>
-                    <li><a href="patients.html">Patients</a></li>
-                    <li><a href="medecins.html">Médecins</a></li>
-                    <li><a href="pharmaciens.html">Pharmaciens</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="patienten.html">Patiënten</a></li>
+                    <li><a href="artsen.html">Huisartsen</a></li>
+                    <li><a href="apothekers.html">Apothekers</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li class="nav-lang-dropdown">
                         <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
                             NL <span class="lang-arrow">▼</span>
                         </button>
                         <ul class="lang-menu">
-                            <li><a href="../index.html">Nederlands</a></li>
-                            <li><a href="fr/index.html" class="lang-active">Français</a></li>
+                            <li><a href="../contact.html" class="lang-active">Nederlands</a></li>
+                            <li><a href="fr/contact.html">Français</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
+        </div>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Bienvenue sur le site <span>GPS-AD</span> Trial</h1>
-            <p>Démo</p>
-        </div>
-    </section>
-
-    <!-- Typography Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <h2 class="text-center mb-3">Styles de texte (les couleurs peuvent encore être modifiées)</h2>
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
-            <p>Paragraphe normal avec <a href="#">lien en orange</a>.</p>
-            <p class="text-accent">Texte d'accent en orange.</p>
-        </div>
-    </section>
-
-    <!-- Cards Section -->
-    <section class="section" id="features">
-        <div class="container">
-            <h2 class="text-center mb-3">Cartes</h2>
-            <div class="flex gap-2" style="flex-wrap: wrap;">
-                <div class="card" style="flex: 1; min-width: 250px;">
-                    <h3 class="card-title">Carte basique</h3>
-                    <p>Ceci est une carte basique avec ombre et effet de survol.</p>
-                    <a href="#" class="btn btn-primary mt-2">Action</a>
-                </div>
-                <div class="card card-accent" style="flex: 1; min-width: 250px;">
-                    <h3 class="card-title">Carte accent</h3>
-                    <p>Cette carte a un accent orange en haut.</p>
-                    <a href="#" class="btn btn-secondary mt-2">Action</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Buttons Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <h2 class="text-center mb-3">Boutons</h2>
-            <div class="flex-center gap-2" style="flex-wrap: wrap;">
-                <a href="#" class="btn btn-primary">Bouton primaire</a>
-                <a href="#" class="btn btn-secondary">Bouton secondaire</a>
-            </div>
-        </div>
-    </section>
 
     <!-- Form Section -->
     <section class="section" id="contact">
         <div class="container" style="max-width: 600px;">
-            <h2 class="text-center mb-3">Formulaires</h2>
+            <h2 class="text-center mb-3">Contact</h2>
             <form>
                 <div class="form-group">
-                    <label for="name">Nom</label>
-                    <input type="text" id="name" placeholder="Entrez votre nom">
+                    <label for="name">Naam</label>
+                    <input type="text" id="name" placeholder="Voer uw naam in">
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="Entrez votre adresse e-mail">
+                    <input type="email" id="email" placeholder="Voer uw e-mailadres in">
                 </div>
                 <div class="form-group">
-                    <label for="subject">Sujet</label>
+                    <label for="subject">Onderwerp</label>
                     <select id="subject">
-                        <option value="">Sélectionnez un sujet</option>
-                        <option value="general">Question générale</option>
-                        <option value="support">Support</option>
-                        <option value="feedback">Commentaires</option>
+                        <option value="">Selecteer een onderwerp</option>
+                        <option value="general">Algemene vraag</option>
+                        <option value="support">Ondersteuning</option>
+                        <option value="feedback">Feedback</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="4" placeholder="Entrez votre message"></textarea>
+                    <label for="message">Bericht</label>
+                    <textarea id="message" rows="4" placeholder="Voer uw bericht in"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
+                <button type="submit" class="btn btn-primary">Verzenden</button>
             </form>
-        </div>
-    </section>
-
-    <!-- Utilities Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <h2 class="text-center mb-3">Classes utilitaires</h2>
-            <div class="bg-accent-light" style="padding: 1rem; border-radius: 8px;">
-                <p class="text-center mb-1"><strong>Arrière-plan:</strong> fond orange clair.</p>
-                <p class="text-center text-accent"><strong>Texte:</strong> texte d'accent orange</p>
-            </div>
-            <div class="mt-3">
-                <p class="text-left">Texte aligné à gauche (.text-left)</p>
-                <p class="text-center">Texte aligné au centre (.text-center)</p>
-                <p class="text-right">Texte aligné à droite (.text-right)</p>
-            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 GPS-AD Trial. Tous droits réservés.</p>
+            <p>&copy; 2026 GPS-AD Trial. Alle rechten voorbehouden.</p>
         </div>
     </footer>
 
