@@ -3,42 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPS-AD Trial</title>
+    <title>GPS-AD studie</title>
     <link rel="icon" type="image/png" href="Images/pictogram.png">
     <link rel="stylesheet" href="style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PGZTV9N7BV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-PGZTV9N7BV");
+    </script>
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PGZTV9N7BV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PGZTV9N7BV');
-</script>
-
 <body>
-    <!-- Header & Navigation -->
     <header>
         <div class="container">
             <nav>
-                <div class="logo">GPS<span>-AD</span> Trial</div>
-                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <a class="logo" href="index.html" aria-label="GPS-AD studie home">
+                    <img src="Images/logo.png" alt="">
+                    <span>GPS-AD</span> TRIAL
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                 </button>
                 <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="patienten.html">Patiënten</a></li>
-                    <li><a href="artsen.html">Huisartsen</a></li>
+                    <li><a href="index.html" class="active">Start</a></li>
                     <li><a href="apothekers.html">Apothekers</a></li>
+                    <li><a href="nieuws.html">Nieuws</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li class="nav-lang-dropdown">
-                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
-                            NL <span class="lang-arrow">▼</span>
-                        </button>
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">NL <span class="lang-arrow">&#9662;</span></button>
                         <ul class="lang-menu">
                             <li><a href="index.html" class="lang-active">Nederlands</a></li>
                             <li><a href="fr/index.html">Français</a></li>
@@ -49,179 +44,92 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Welkom op de <span>GPS-AD</span> Trial website</h1>
-            <p>Demo</p>
-        </div>
-    </section>
-
-    <!-- Typography Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <h2 class="text-center mb-3">Tekststijlen (kleuren kunnen nog veranderd worden)</h2>
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
-            <p>Normale paragraaf met <a href="#">link in oranje</a>.</p>
-            <p class="text-accent">Accenttekst in het oranje.</p>
-        </div>
-    </section>
-
-    <!-- Cards Section -->
-    <section class="section" id="features">
-        <div class="container">
-            <h2 class="text-center mb-3">Cards</h2>
-            <div class="flex gap-2" style="flex-wrap: wrap;">
-                <div class="card" style="flex: 1; min-width: 250px;">
-                    <h3 class="card-title">Basic Card</h3>
-                    <p>Dit is een basis card met schaduw en hover effect.</p>
-                    <a href="#" class="btn btn-primary mt-2">Actie</a>
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <p class="eyebrow">De GPS-AD studie</p>
+                    <h1>Betere opvolging bij langdurig gebruik van antidepressiva</h1>
+                    <p class="lead">De GPS-AD studie onderzoekt hoe mensen die langdurig antidepressiva gebruiken nog beter kunnen worden opgevolgd en ondersteund. Wanneer afbouwen aangewezen is, wordt onderzocht hoe dit geleidelijk en met de juiste begeleiding kan gebeuren.</p>
+                    <p>De studie richt zich op mensen die antidepressiva gebruiken voor de behandeling van een depressie.</p>
                 </div>
-                <div class="card card-accent" style="flex: 1; min-width: 250px;">
-                    <h3 class="card-title">Accent Card</h3>
-                    <p>Deze card heeft een oranje accent bovenaan.</p>
-                    <a href="#" class="btn btn-secondary mt-2">Actie</a>
+                <aside class="hero-panel" aria-label="Studie samenvatting">
+                    <img src="Images/logo.png" alt="GPS-AD logo">
+                    <h2>GPS-AD studie</h2>
+                    <p>Een studie in Belgische huisartsenpraktijken, gecoördineerd door Universiteit Gent in samenwerking met de zes universitaire centra voor huisartsgeneeskunde in België.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Waarom deze studie?</h2>
+                    <p>Veel mensen blijven antidepressiva meerdere jaren gebruiken nadat ze hersteld zijn van een depressie. Het is goed om af en toe de behandeling samen met de huisarts te bespreken.</p>
+                    <p>Voor sommige mensen blijft die behandeling belangrijk. Voor anderen kan het, wanneer ze zich al langere tijd goed voelen, zinvol zijn om samen te bekijken of het antidepressivum nog nodig is.</p>
+                    <h3>Dat kan verschillende vragen oproepen</h3>
+                    <div class="question-box">
+                        <ul>
+                            <li>Hoelang moet ik dit nog nemen?</li>
+                            <li>Is het veilig om dit jarenlang te nemen?</li>
+                            <li>Wat als mijn vroegere klachten terugkomen?</li>
+                            <li>Welke klachten kan ik krijgen tijdens het afbouwen?</li>
+                            <li>Hoe pak ik dit aan?</li>
+                        </ul>
+                    </div>
+                    <p>De GPS-AD studie onderzoekt hoe patiënten die langdurig gebruik van antidepressiva gebruiken hierin nog beter ondersteund kunnen worden door hun huisarts en apotheker.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Buttons Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <h2 class="text-center mb-3">Knoppen</h2>
-            <div class="flex-center gap-2" style="flex-wrap: wrap;">
-                <a href="#" class="btn btn-primary">Primaire knop</a>
-                <a href="#" class="btn btn-secondary">Secundaire knop</a>
+        <section class="section section-soft">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Wie kan deelnemen?</h2>
+                    <p>Huisartsen kunnen patiënten uitnodigen voor de studie wanneer zij aan de onderstaande voorwaarden voldoen.</p>
+                    <h3>Deelname kan mogelijk zijn wanneer patiënten:</h3>
+                    <div class="question-box">
+                        <ul>
+                            <li>18 jaar of ouder zijn</li>
+                            <li>een antidepressivum gebruiken voor de behandeling van een depressie</li>
+                            <li>het antidepressivum gedurende minstens 6 maanden na een eerste depressieve episode gebruiken, of gedurende minstens 2 jaar wanneer er een hoger risico op herval bestaat</li>
+                            <li>niet meer voldoen aan de criteria voor een depressie</li>
+                        </ul>
+                    </div>
+                    <p>De huisarts bekijkt samen met de patiënt of deelname mogelijk is.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Form Section -->
-    <section class="section" id="contact">
-        <div class="container" style="max-width: 600px;">
-            <h2 class="text-center mb-3">Formulieren</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Naam</label>
-                    <input type="text" id="name" placeholder="Voer uw naam in">
+        <section class="section">
+            <div class="container">
+                <div class="about-box">
+                    <h2>Over de GPS-AD studie</h2>
+                    <p>De GPS-AD is een studie die plaatsvindt in Belgische huisartsenpraktijken. De studie wordt gecoördineerd door de Universiteit Gent, in samenwerking met de zes universitaire centra voor huisartsgeneeskunde in België.</p>
+                    <p>De hoofdonderzoeker is dr. Ellen Van Leeuwen (Universiteit Gent), de co-hoofdonderzoekers zijn Kristien Coteur (Universiteit Maastricht) en Gilles Henrard (L'Université de Liège). De coördinatie van de Franstalige centra gebeurt door Marina Di Gregorio (L'Université de Liège).</p>
+                    <p>De studie wordt gefinancierd door het Federaal Kenniscentrum voor de Gezondheidszorg (KCE).</p>
+                    <div class="logo-strip" aria-label="Partnerlogo's">
+                        <img src="Images/LOGO_UGent.png" alt="UGent">
+                        <img src="Images/LOGO_UAntwerpen.webp" alt="UAntwerpen">
+                        <img src="Images/LOGO_Liege_medecine_generale.jpg" alt="Liège médecine générale">
+                        <img src="Images/LOGO_VUB.webp" alt="VUB">
+                        <img src="Images/LOGO_KUL.webp" alt="KU Leuven">
+                        <img src="Images/LOGO_CAMG.jpeg" alt="CAMG">
+                        <img src="Images/LOGO_DMG.jpg" alt="DMG">
+                        <img src="Images/LOGO_KCE.png" alt="KCE">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="Voer uw e-mailadres in">
-                </div>
-                <div class="form-group">
-                    <label for="subject">Onderwerp</label>
-                    <select id="subject">
-                        <option value="">Selecteer een onderwerp</option>
-                        <option value="general">Algemene vraag</option>
-                        <option value="support">Ondersteuning</option>
-                        <option value="feedback">Feedback</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Bericht</label>
-                    <textarea id="message" rows="4" placeholder="Voer uw bericht in"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Verzenden</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Utilities Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <h2 class="text-center mb-3">Hulpklassen</h2>
-            <div class="bg-accent-light" style="padding: 1rem; border-radius: 8px;">
-                <p class="text-center mb-1"><strong>Achtergrond:</strong> licht-oranje achtergrond.</p>
-                <p class="text-center text-accent"><strong>Tekst:</strong> oranje accenttekst</p>
             </div>
-            <div class="mt-3">
-                <p class="text-left">Tekst uitgelijnd links (.text-left)</p>
-                <p class="text-center">Tekst uitgelijnd in het midden (.text-center)</p>
-                <p class="text-right">Tekst uitgelijnd rechts (.text-right)</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 GPS-AD Trial. Alle rechten voorbehouden.</p>
+            <p>&copy; 2026 GPS-AD studie. Alle rechten voorbehouden.</p>
         </div>
     </footer>
 
-    <!-- Overlay for mobile menu -->
     <div class="nav-overlay" id="nav-overlay"></div>
-
-    <script>
-        (function() {
-            const hamburger = document.getElementById('hamburger');
-            const navLinks = document.getElementById('nav-links');
-            const navOverlay = document.getElementById('nav-overlay');
-            const navLinksItems = navLinks.querySelectorAll('a');
-
-            function toggleMenu() {
-                hamburger.classList.toggle('active');
-                navLinks.classList.toggle('active');
-                navOverlay.classList.toggle('active');
-                
-                const isExpanded = hamburger.classList.contains('active');
-                hamburger.setAttribute('aria-expanded', isExpanded);
-                
-                // Prevent body scroll when menu is open
-                document.body.style.overflow = isExpanded ? 'hidden' : '';
-            }
-
-            function closeMenu() {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('active');
-                navOverlay.classList.remove('active');
-                hamburger.setAttribute('aria-expanded', 'false');
-                document.body.style.overflow = '';
-            }
-
-            hamburger.addEventListener('click', toggleMenu);
-            navOverlay.addEventListener('click', closeMenu);
-
-            // Close menu when a nav link is clicked
-            navLinksItems.forEach(link => {
-                link.addEventListener('click', closeMenu);
-            });
-
-            // Close menu on escape key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && navLinks.classList.contains('active')) {
-                    closeMenu();
-                }
-            });
-
-            // Language dropdown functionality
-            const langDropdown = document.querySelector('.nav-lang-dropdown');
-            const langToggle = document.querySelector('.lang-toggle');
-            
-            if (langToggle && langDropdown) {
-                langToggle.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    langDropdown.classList.toggle('open');
-                    const isOpen = langDropdown.classList.contains('open');
-                    langToggle.setAttribute('aria-expanded', isOpen);
-                });
-                
-                // Close dropdown when clicking outside
-                document.addEventListener('click', function(e) {
-                    if (!langDropdown.contains(e.target)) {
-                        langDropdown.classList.remove('open');
-                        langToggle.setAttribute('aria-expanded', 'false');
-                    }
-                });
-            }
-        })();
-    </script>
+    <script src="site.js"></script>
 </body>
 </html>
