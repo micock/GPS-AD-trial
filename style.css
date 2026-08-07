@@ -34,11 +34,25 @@ body {
     line-height: 1.6;
     color: var(--color-text);
     background: var(--color-page);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-page {
+    background:
+        linear-gradient(125deg, rgba(30, 100, 200, 0.10), rgba(255, 107, 0, 0.14)),
+        var(--color-page);
+    background-attachment: fixed;
 }
 
 img {
     max-width: 100%;
     display: block;
+}
+
+main {
+    flex: 1;
 }
 
 a {
@@ -282,10 +296,9 @@ nav {
 }
 
 .hero {
+    position: relative;
     padding: 4.5rem 0 3rem;
-    background:
-        linear-gradient(125deg, rgba(30, 100, 200, 0.10), rgba(255, 107, 0, 0.14)),
-        var(--color-page);
+    background: transparent;
 }
 
 .hero h1 span {
@@ -377,11 +390,22 @@ nav {
 }
 
 .section {
+    position: relative;
     padding: 3.5rem 0;
 }
 
+.section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: max(1rem, calc((100% - var(--container)) / 2));
+    right: max(1rem, calc((100% - var(--container)) / 2));
+    height: 1px;
+    background: rgba(28, 47, 80, 0.14);
+}
+
 .section-soft {
-    background: var(--color-surface-soft);
+    background: transparent;
 }
 
 .section-header {
@@ -389,8 +413,19 @@ nav {
 }
 
 .page-intro {
+    position: relative;
     padding: 3.2rem 0 2rem;
-    background: var(--color-surface-soft);
+    background: transparent;
+}
+
+.page-intro::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: max(1rem, calc((100% - var(--container)) / 2));
+    right: max(1rem, calc((100% - var(--container)) / 2));
+    height: 1px;
+    background: rgba(28, 47, 80, 0.14);
 }
 
 .grid {
